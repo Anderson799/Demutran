@@ -10,6 +10,7 @@ if(mysqli_connect_errno($conexao)){
 	echo "Erro na conexão com o banco";
 	mysqli_connect_error();
 }else{
+	echo "Conexao estabelecida";
 	
 } ?>
 

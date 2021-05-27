@@ -11,10 +11,10 @@ $_SESSION['email'] = $email;
 $_SESSION['telefone'] = $telefone;
 $_SESSION['mensagem'] = $mensagem;
 
-$sqlInserir = "INSERT INTO contato (nome,autor,telefone,mensagem)values('$_SESSION[nome]','$_SESSION[email]',
+$sqlInserir = "INSERT INTO contato (nome,email,telefone,mensagem)values('$_SESSION[nome]','$_SESSION[email]',
 '$_SESSION[telefone]','$_SESSION[mensagem]')";
 $consulta = mysqli_query($conexao,$sqlInserir);
 if(isset($consulta)){
-header('Location:../index.html');
+header('Location:index.html');
 }
  ?>

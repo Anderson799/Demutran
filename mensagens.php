@@ -28,7 +28,7 @@ if(mysqli_num_rows($consulta)==0) {
 
   <form method="POST" action="mensagens.php">
       <div class="input-group">
-            <input class="input--style-3" required type="text" placeholder="Qual mensagem você procura" name="nome">
+            <input class="input--style-3" required type="text" placeholder=" Pesquise aqui" name="nome">
       </div>
       <div class="p-t-10">
           <button type="submit">Buscar</button>
@@ -53,7 +53,7 @@ if(mysqli_num_rows($consulta)==0) {
           <td><center> <?php echo $resultado['telefone'];?></center></td>
           <td>
             <a href=visu.php?id=<?php echo $resultado['id']?>>
-              <input type="button" name="Qler" value="Quero ler">
+              <input type="button" name="Qler" value="#">
             </a>
           </td>
         <?php if(isset($_SESSION['emailL'])){?>  
@@ -121,7 +121,7 @@ if(mysqli_num_rows($consulta)==0) {
 
               <td>
             <a href=visu.php?id=<?php echo $busca['id']?>>
-              <input type="button" name="Qler" value="Quero ler">
+              <input type="button" name="Qler" value="#">
             </a>
           </td>
 

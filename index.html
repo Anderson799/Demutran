@@ -360,11 +360,13 @@
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-                <form method="POST" action="Contato.php">
+                <form method="POST" action="https://api.staticforms.xyz/submit">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" name="nome" type="text" placeholder="Seu nome *" required="required" />
+                                <input type="hidden" name="accessKey" value="2006dc37-0a6e-4dee-a1c7-adbb6b663967">
+                                <input type="hidden" name="redirectTo" value="http://localhost/CloneGit/Demutran/index.html">
+                                <input class="form-control" name="name" type="text" placeholder="Seu nome *" required="required" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
@@ -372,13 +374,13 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" name="telefone" type="text" placeholder="Seu telefone *" required="required" />
+                                <input class="form-control" name="phone" type="text" placeholder="Seu telefone *" required="required" />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" name="mensagem" placeholder="Sua mensagem *" required="required"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Sua mensagem *" required="required"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

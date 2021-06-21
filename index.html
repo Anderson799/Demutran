@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Demutrans</title>
+        <title>Demutram</title>
         
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -17,6 +17,54 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style type="text/css">
+    
+        header.and{
+           padding-top: 10.5rem;
+           padding-bottom: 6rem;
+           text-align: center;
+           color: #fff;
+           background-image: url("assets/img/header-bg.jpg");
+           background-repeat: no-repeat;
+           background-attachment: scroll;
+           background-position: center center;
+           background-size: cover;
+       }
+       header.and .and-subheading{
+           font-size: 1.5rem;
+           font-style: italic;
+           line-height: 1.5rem;
+           margin-bottom: 25px;
+           font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+       header.and .and-heading{
+           font-size: 3.25rem;
+           font-weight: 700;
+           line-height: 3.25rem;
+           margin-bottom: 2rem;
+           font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+       }
+       @media (min-width: 768px) {
+       header.and {
+       padding-top: 17rem;
+       padding-bottom: 12.5rem;
+     }
+     header.and .and-subheading {
+       font-size: 2.25rem;
+       font-style: italic;
+       line-height: 2.25rem;
+       margin-bottom: 2rem;
+     }
+     header.and .and-heading {
+       font-size: 4.5rem;
+       font-weight: 700;
+       line-height: 4.5rem;
+       margin-bottom: 4rem;
+     }}
+   
+               
+           </style>
+    
     <body id="page-top" >
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -29,7 +77,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="Serviços">Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Postagens">Postagens</a></li>
+                        <li class="nav-item"><a class="nav-link" href="upload/index.php">Postagens</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Membros</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
@@ -45,53 +93,6 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Conheça mais</a>
             </div>
         </header>
- <style type="text/css">
-    
-     header.and{
-        padding-top: 10.5rem;
-        padding-bottom: 6rem;
-        text-align: center;
-        color: #fff;
-        background-image: url("assets/img/header-bg.jpg");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center center;
-        background-size: cover;
-    }
-    header.and .and-subheading{
-        font-size: 1.5rem;
-        font-style: italic;
-        line-height: 1.5rem;
-        margin-bottom: 25px;
-        font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-     }
-    header.and .and-heading{
-        font-size: 3.25rem;
-        font-weight: 700;
-        line-height: 3.25rem;
-        margin-bottom: 2rem;
-        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    }
-    @media (min-width: 768px) {
-    header.and {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
-  }
-  header.and .and-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-  header.and .and-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }}
-
-            
-        </style>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -138,11 +139,11 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="upload.php">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <a href="upload.php"><img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." /></a>
+                                <a href="upload/exibir.php"><img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." /></a>
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Postagens</div>
@@ -153,7 +154,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="upload/exibir.php">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
